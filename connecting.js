@@ -9,12 +9,12 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     const passwordField = document.getElementById('user-password');
     const getPassword = passwordField.value;
     
-    
+
     //verify email and password (do not use farther)
     if(getEmail === 'selfbank24@gmail.com' && getPassword === 'mybank'){
-        console.log('valid user');
+        window.location.href = 'bank.html';
     }
     else{
-        console.log('invalid user');
+        alert('Provide valid email or password');
     }
 });
